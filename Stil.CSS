@@ -1,0 +1,181 @@
+/* Stilizare Header */
+.header {
+    background-color: #000;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    height: 120px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 50px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn--primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Stilizare Hero */
+.hero {
+    background: url('bicla.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero__subtitle {
+    font-size: 1rem;
+}
+
+/* Stilizare Secțiunea Conținut */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Stilizare Articole Relevante */
+.related {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.related__grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.related__grid article {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.related__grid article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Stilizare Footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer__nav ul li {
+    margin: 0 10px;
+}
+
+.footer__nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+/* Stilizare articole recomandate */
+.related__item {
+    width: 30%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Imagini de fundal pentru articole recomandate */
+.related__item:nth-child(1) {
+    background-image: url('bicla.jpg')
+}
+
+.related__item:nth-child(2) {
+    background-image: url('ex1.png')
+}
+
+.related__item:nth-child(3) {
+    background-image: url('ex4.png')
+}
+
+.item__title {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.related__item:hover {
+    transform: scale(5.25);
+}
